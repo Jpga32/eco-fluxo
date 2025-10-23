@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-// Autor: João Pedro H. Ganacim
-// Data: 20/10/2025
-// Projeto: EcoFluxo
+    // Autor: João Pedro H. Ganacim
+    // Data: 20/10/2025
+    // Projeto: EcoFluxo
 
     // 1. INICIALIZAÇÃO E GERAL
 
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (targetId) {
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
-                    const navbarHeight = 56; 
+                    const navbarHeight = 56;
                     window.scrollTo({
                         top: targetElement.offsetTop - navbarHeight,
                         behavior: 'smooth'
@@ -80,9 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
         { r: "Reciclar", icon: "fas fa-recycle", description: "Separe corretamente o lixo reciclável e encaminhe-o para a coleta seletiva.", color: "#4CAF50" },
     ];
 
-// Autor: João Pedro H. Ganacim
-// Data: 20/10/2025
-// Projeto: EcoFluxo
+    // Autor: João Pedro H. Ganacim
+    // Data: 20/10/2025
+    // Projeto: EcoFluxo
 
     const rCardsContainer = document.getElementById('r-cards-container');
     function gerarCards5Rs() {
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         rCardsContainer.innerHTML = '';
         rsData.forEach(item => {
             const card = document.createElement('div');
-            card.className = `col-12 col-md-6 col-lg-4 col-xl-2dot4 mb-4`; 
+            card.className = `col-12 col-md-6 col-lg-4 col-xl-2dot4 mb-4`;
             card.innerHTML = `
                 <div class="card card-5r h-100 p-3 text-center"> 
                     <div class="card-body">
@@ -170,12 +170,12 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         }
     };
- 
 
 
-// Autor: João Pedro H. Ganacim
-// Data: 20/10/2025
-// Projeto: EcoFluxo
+
+    // Autor: João Pedro H. Ganacim
+    // Data: 20/10/2025
+    // Projeto: EcoFluxo
 
     const lixeiraButtons = document.querySelectorAll('.btn-lixeira');
     const resultadoDiv = document.getElementById('resultado-reciclagem');
@@ -235,6 +235,13 @@ document.addEventListener('DOMContentLoaded', () => {
             linkedinUrl: "https://www.linkedin.com/in/júlia-assis-66921423a"
         },
         {
+            nome: "Gabriel Silva Braga",
+            funcao: "Suporte e auxilio de informações tecnicas",
+            fotoUrl: "../img/gabriel.png",
+            linkedinUrl: "https://www.linkedin.com/in/carlos-pereira-ficticio"
+        },
+
+        {
             nome: "Derick Silva Freire ",
             funcao: "Ux/Ui e Pesquisa",
             fotoUrl: "https://placehold.co/120x120/FFC107/333333?text=CP",
@@ -252,14 +259,8 @@ document.addEventListener('DOMContentLoaded', () => {
             fotoUrl: "https://placehold.co/120x120/FFC107/333333?text=CP",
             linkedinUrl: "https://www.linkedin.com/in/carlos-pereira-ficticio"
         },
-        {
-            nome: "Gabriel Silva Braga",
-            funcao: "Suporte e auxilio de informações tecnicas",
-            fotoUrl: "../img/gabriel.png",
-            linkedinUrl: "https://www.linkedin.com/in/carlos-pereira-ficticio"
-        }
-        
-        
+
+
     ];
 
     const desenvolvedoresContainer = document.getElementById('desenvolvedores-container');
@@ -360,10 +361,10 @@ document.body.insertAdjacentHTML("beforeend", modalHTML);
 // Pega o botão e adiciona evento para abrir o modal
 const btnTabela = document.getElementById("btn-tabela-precos");
 if (btnTabela) {
-  btnTabela.addEventListener("click", () => {
-    const modal = new bootstrap.Modal(document.getElementById("modalTabelaPrecos"));
-    modal.show();
-  });
+    btnTabela.addEventListener("click", () => {
+        const modal = new bootstrap.Modal(document.getElementById("modalTabelaPrecos"));
+        modal.show();
+    });
 }
 
 const _signature = "João Pedro H. Ganacim 2025";
