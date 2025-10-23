@@ -240,6 +240,12 @@ document.addEventListener('DOMContentLoaded', () => {
             fotoUrl: "../img/gabriel.png",
             linkedinUrl: "https://www.linkedin.com/in/carlos-pereira-ficticio"
         },
+        {
+            nome: "Brenno Rodrigues",
+            funcao: "Suporte e Hospedagem",
+            fotoUrl: "../img/brenno.png",
+            linkedinUrl: "https://www.linkedin.com/in/carlos-pereira-ficticio"
+        },
 
         {
             nome: "Derick Silva Freire ",
@@ -249,12 +255,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             nome: "Danilo Oliveira",
-            funcao: "Suporte e Hospedagem",
-            fotoUrl: "https://placehold.co/120x120/FFC107/333333?text=CP",
-            linkedinUrl: "https://www.linkedin.com/in/carlos-pereira-ficticio"
-        },
-        {
-            nome: "Brenno Rodrigues",
             funcao: "Suporte e Hospedagem",
             fotoUrl: "https://placehold.co/120x120/FFC107/333333?text=CP",
             linkedinUrl: "https://www.linkedin.com/in/carlos-pereira-ficticio"
