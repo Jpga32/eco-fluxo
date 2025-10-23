@@ -1,0 +1,83 @@
+/* ------------------------------------------- */
+/* SEÇÃO DESENVOLVEDORES (PROFISSIONAL) */
+/* ------------------------------------------- */
+#desenvolvedores {
+    
+    background-color: #F7FFFA; 
+    padding: 60px 0;
+}
+
+/* Estiliza o parágrafo principal (p.lead) para dar mais destaque */
+#desenvolvedores .lead {
+    color: #4CAF50 !important; /* Cor principal verde para destaque */
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Estiliza o parágrafo secundário (p.text-muted) */
+#desenvolvedores p.text-muted.small {
+    color: #777 !important; /* Cinza escuro para melhor legibilidade */
+    margin-top: 30px;
+    font-style: italic;
+}
+
+
+.card-desenvolvedor {
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Sombra mais suave e elegante */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+    border-top: 5px solid #4CAF50; /* Linha verde no topo para destaque */
+}
+
+.card-desenvolvedor:hover {
+    transform: translateY(-5px); /* Efeito de elevação suave */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-foto {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%; /* Torna a imagem redonda */
+    margin-bottom: 15px;
+    border: 4px solid #66BB6A; /* Borda sutil de destaque */
+    transition: border-color 0.3s;
+}
+
+.card-desenvolvedor:hover .perfil-foto {
+    border-color: #2E8B57; /* Escurece a borda no hover */
+}
+
+.linkedin-link {
+    font-size: 2.2rem;
+    color: #0077B5; /* Cor oficial do LinkedIn */
+    transition: color 0.2s ease;
+    margin-top: 10px;
+}
+
+.linkedin-link:hover {
+    color: #005582;
+}
+.botao-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 30px;
+    background-color: #4CAF50; /* Verde primário */
+    color: white !important; /* CORRIGIDO: Força a cor do texto para branco */
+    text-decoration: none;
+    border-radius: 8px; /* Cantos arredondados */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.botao-voltar:hover {
+    background-color: #388E3C; /* Verde mais escuro no hover */
+    color: white !important; /* CORRIGIDO: Garante que o texto permaneça branco no hover */
+    transform: translateY(-2px); /* Pequeno efeito de levantamento */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}

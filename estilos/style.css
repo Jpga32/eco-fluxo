@@ -1,0 +1,199 @@
+/* estilos/style.css */
+
+/* Cores e Fontes */
+:root {
+    --cor-primaria: #00796B; /* Verde Escuro/ sustentabilidade */
+    --cor-secundaria: #4CAF50; /* Verde Vivo de Destaque */
+    --cor-fundo-escuro: #212529; /* Fundo escuro para header */
+    --cor-texto-claro: #f8f9fa; /* Branco/Claro */
+    --cor-info: #0d6efd; /* Azul para informação (5 R's) */
+    
+    /* Cores das Lixeiras */
+    --lixeira-azul: #007bff;     /* Papel */
+    --lixeira-vermelha: #dc3545; /* Plástico */
+    --lixeira-verde: #28a745;    /* Vidro */
+    --lixeira-amarela: #ffc107;  /* Metal */
+}
+
+/* * CORREÇÃO PARA BOOTSTRAP: 
+/* Código desenvolvido por João Pedro H. Ganacim */
+
+.text-primary { color: var(--cor-primaria) !important; }
+.text-success { color: var(--cor-secundaria) !important; }
+
+body {
+    /* Mantendo a sua font-family original (Segoe UI) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    padding-top: 56px; /* Para que o conteúdo não fique atrás do header fixo */
+    background-color: #f4f7f6; /* Fundo suave para o corpo */
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: 700;
+    color: var(--cor-secundaria) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--cor-secundaria) !important;
+}
+
+
+/* Seção Hero (Impacto) */
+#hero {
+    /* Imagem de fundo, conforme solicitado */
+    background: url('../img/lixo.jpg') no-repeat center center/cover;
+    height: 90vh; /* Ocupa a maior parte da viewport */
+    position: relative;
+    z-index: 1;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay escuro para melhorar contraste */
+    z-index: -1;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Botão de Destaque no Hero e Botões de Ação Geral (btn-success) */
+/* Código desenvolvido por João Pedro H. Ganacim */
+/* Usando var(--cor-secundaria) para consistência */
+.btn-success {
+    background-color: var(--cor-secundaria) !important;
+    border-color: var(--cor-secundaria) !important;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: var(--cor-primaria) !important; /* Usando o verde escuro no hover */
+    border-color: var(--cor-primaria) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Estilo para Botões Outline (Contorno) */
+.btn-outline-success {
+    color: var(--cor-secundaria) !important;
+    border-color: var(--cor-secundaria) !important;
+}
+
+.btn-outline-success:hover {
+    background-color: var(--cor-secundaria) !important;
+    color: white !important;
+    border-color: var(--cor-secundaria) !important;
+}
+
+
+/* Estilo Geral para Seções */
+section {
+    padding: 6rem 0;
+}
+
+/* 5 R's Cards */
+.card-5r {
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-5r:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-5r .fa-3x {
+    color: var(--cor-primaria) !important;
+    transition: color 0.3s ease;
+}
+
+.card-5r:hover .fa-3x {
+    color: var(--cor-secundaria) !important;
+}
+
+/* ------------------------------------------- */
+/* SEÇÃO GUIA DE RECICLAGEM (#reciclagem) */
+/* Código desenvolvido por João Pedro H. Ganacim */
+/* ------------------------------------------- */
+
+/* Estilo base do botão da lixeira */
+.btn-lixeira {
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
+    min-width: 150px; /* Garante tamanho mínimo para melhor toque mobile */
+}
+
+.btn-lixeira:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
+}
+
+/* Classe de destaque para o botão ativo */
+.btn-lixeira.active-lixeira {
+    border: 3px solid #fff; 
+    outline: 4px solid var(--cor-primaria);
+    transform: scale(1.08);
+}
+
+/* Código desenvolvido por João Pedro H. Ganacim */
+/* Cores das Lixeiras */
+.btn-lixeira-azul { background-color: var(--lixeira-azul); } /* Papel */
+.btn-lixeira-vermelha { background-color: var(--lixeira-vermelha); } /* Plástico */
+.btn-lixeira-verde { background-color: var(--lixeira-verde); } /* Vidro */
+.btn-lixeira-amarela { 
+    background-color: var(--lixeira-amarela); 
+    color: #333; /* Texto escuro para contraste no amarelo */
+} 
+
+/* Estilo para o container de resultados */
+#resultado-reciclagem {
+    border-radius: 1rem;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+/* Estilo de lista para o que pode e não pode */
+.lista-pode-nao-pode {
+    list-style: none;
+    padding-left: 0;
+}
+
+.lista-pode-nao-pode li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    font-size: 0.95rem;
+}
+.lista-pode-nao-pode li:last-child {
+    border-bottom: none;
+}
+
+/* Rodapé */
+footer a:hover {
+    color: var(--cor-secundaria) !important;
+}
+
+/* Responsividade para botões de lixeira */
+@media (max-width: 576px) {
+    .btn-lixeira {
+        min-width: 45%; 
+        margin: 5px 0;
+    }
+}
+/* Código desenvolvido por João Pedro H. Ganacim */
