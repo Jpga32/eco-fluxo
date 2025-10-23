@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             nome: "Derick Silva Freire ",
             funcao: "Ux/Ui e Pesquisa",
-            fotoUrl: "https://placehold.co/120x120/FFC107/333333?text=CP",
+            fotoUrl: "../img/derick.png",
             linkedinUrl: "https://www.linkedin.com/in/carlos-pereira-ficticio"
         },
         {
