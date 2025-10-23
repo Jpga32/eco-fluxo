@@ -227,20 +227,32 @@ document.addEventListener('DOMContentLoaded', () => {
             linkedinUrl: "https://www.linkedin.com/in/maria-oliveira-ficticio"
         },
         {
-            nome: "Julia ",
-            funcao: " Conteúdo e Gráfico",
-            fotoUrl: "https://placehold.co/120x120/FFC107/333333?text=CP",
-            linkedinUrl: "https://www.linkedin.com/in/carlos-pereira-ficticio"
+            nome: "Julia Assis ",
+            funcao: "Frontend e desenvolvedora Back-End ",
+            fotoUrl: "../img/julia.png",
+            linkedinUrl: "https://www.linkedin.com/in/júlia-assis-66921423a"
         },
         {
-            nome: "Derick ",
+            nome: "Derick Silva Freire ",
             funcao: "Ux/Ui e Pesquisa",
             fotoUrl: "https://placehold.co/120x120/FFC107/333333?text=CP",
             linkedinUrl: "https://www.linkedin.com/in/carlos-pereira-ficticio"
         },
         {
-            nome: "Carlos Pereira (Fictício)",
+            nome: "Danilo Oliveira",
             funcao: "Suporte e Hospedagem",
+            fotoUrl: "https://placehold.co/120x120/FFC107/333333?text=CP",
+            linkedinUrl: "https://www.linkedin.com/in/carlos-pereira-ficticio"
+        },
+        {
+            nome: "Brenno Rodrigues",
+            funcao: "Suporte e Hospedagem",
+            fotoUrl: "https://placehold.co/120x120/FFC107/333333?text=CP",
+            linkedinUrl: "https://www.linkedin.com/in/carlos-pereira-ficticio"
+        },
+        {
+            nome: "Gabriel Silva Braga",
+            funcao: "Suporte e auxilio de informações tecnicas",
             fotoUrl: "https://placehold.co/120x120/FFC107/333333?text=CP",
             linkedinUrl: "https://www.linkedin.com/in/carlos-pereira-ficticio"
         }
