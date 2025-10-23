@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- Seu CSS personalizado -->
     <link rel="stylesheet" href="estilos/style.css">
+    <!-- Leaflet CSS e JS (para o mapa) -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 </head>
 
 <body>
@@ -167,6 +174,44 @@
             </div>
         </div>
     </section>
+
+   <!-- Seção de Localização dos Ecopontos -->
+<section id="ecopontos" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold text-success">Ecopontos na Sua Região</h2>
+    <p class="text-center text-muted mb-4">
+      Selecione a zona da cidade para visualizar os ecopontos e veja no mapa onde fazer o descarte correto.
+    </p>
+
+    <!-- Seleção de Zona -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-6">
+        <select id="zonaSelect" class="form-select form-select-lg border-success shadow-sm">
+          <option value="" selected disabled>Selecione uma Zona</option>
+          <option value="norte">Zona Norte</option>
+          <option value="sul">Zona Sul</option>
+          <option value="leste">Zona Leste</option>
+          <option value="oeste">Zona Oeste</option>
+          <option value="centro">Centro</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Container com lista + mapa -->
+    <div class="row justify-content-center g-4">
+      <div class="col-md-5">
+        <div id="listaEcopontos" class="card shadow-sm p-4 text-center text-muted">
+          <p>Selecione uma zona para ver os ecopontos disponíveis.</p>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div id="mapaEcopontos" style="height: 400px;" class="rounded shadow-sm"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Seção Nosso Projeto -->
     <section id="projeto" class="py-5">
